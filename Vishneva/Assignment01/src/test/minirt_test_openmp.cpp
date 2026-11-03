@@ -54,7 +54,8 @@ int main(int argc, char **argv) {
         initScene(scene);
     } else {
         scene.loadFromFile(sceneFile);
-    
+    }
+
 
     const double backgroundSizeX = 4;
     const double backgroundSizeY = 4;

@@ -1,9 +1,5 @@
-find_package(OpenMP REQUIRED)
+cmake_minimum_required(VERSION 3.0.0)
 
-add_executable(minirt-test minirt_test_openmp.cpp)
+project(MINIRT CXX)
 
-target_link_libraries(minirt-test
-    PUBLIC
-    minirt
-    OpenMP::OpenMP_CXX
-)
+add_subdirectory(src)
